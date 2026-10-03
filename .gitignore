@@ -1,0 +1,140 @@
+# ============================================
+# Dependencies
+# ============================================
+
+node_modules/
+.pnp/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+!.yarn/sdks
+!.yarn/versions
+
+
+# ============================================
+# Next.js
+# ============================================
+
+.next/
+out/
+build/
+
+
+# ============================================
+# Production / Deployment
+# ============================================
+
+.vercel/
+.netlify/
+.turbo/
+
+
+# ============================================
+# Environment Variables / Secrets
+# ============================================
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep example environment files
+!.env.example
+
+
+# ============================================
+# Testing
+# ============================================
+
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+
+
+# ============================================
+# TypeScript
+# ============================================
+
+*.tsbuildinfo
+next-env.d.ts
+
+
+# ============================================
+# Debug / Logs
+# ============================================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*.log
+
+
+# ============================================
+# OS / System Files
+# ============================================
+
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ============================================
+# Editor / IDE
+# ============================================
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+*~
+
+
+# ============================================
+# Local Development
+# ============================================
+
+*.local
+
+
+# ============================================
+# Certificates / Private Keys
+# ============================================
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+
+# ============================================
+# Cache
+# ============================================
+
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+
+# ============================================
+# Temporary Files
+# ============================================
+
+*.tmp
+*.temp
+*.bak

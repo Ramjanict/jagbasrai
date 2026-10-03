@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+Disallow: /dashboard
+
+# Host
+Host: https://jagbasrai.vercel.app
+
+# Sitemaps
+Sitemap: https://jagbasrai.vercel.app/sitemap.xml

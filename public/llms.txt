@@ -1,0 +1,12 @@
+# LLM Usage Policy
+
+User-Agent: *
+Allow: /
+
+# Content Usage
+Summary: allowed
+Attribution: required
+Commercial-Use: disallowed
+
+# Contact
+Contact: goautomate@gmail.com
