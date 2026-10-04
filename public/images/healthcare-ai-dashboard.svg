@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0721"/>
+      <stop offset="50%" stop-color="#180e38"/>
+      <stop offset="100%" stop-color="#08031a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A20A2"/>
+      <stop offset="100%" stop-color="#24C6DA"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#24C6DA"/>
+      <stop offset="100%" stop-color="#4FD1D9"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#24C6DA" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#9C27B0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.04)" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="675"/>
+    <line x1="480" y1="0" x2="480" y2="675"/>
+    <line x1="720" y1="0" x2="720" y2="675"/>
+    <line x1="960" y1="0" x2="960" y2="675"/>
+  </g>
+
+  <!-- Top Navigation Bar -->
+  <rect x="40" y="30" width="1120" height="60" rx="14" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+  <circle cx="80" cy="60" r="16" fill="url(#cyanGrad)"/>
+  <text x="74" y="66" fill="#0C0721" font-family="system-ui, sans-serif" font-weight="900" font-size="16">G</text>
+  <text x="110" y="66" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700" font-size="18">GoAutomateMD</text>
+  <text x="260" y="66" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="500" font-size="14">Intelligent Clinical Command Center</text>
+
+  <rect x="940" y="45" width="100" height="30" rx="15" fill="rgba(36, 198, 218, 0.15)" stroke="#24C6DA" stroke-width="1"/>
+  <circle cx="958" cy="60" r="4" fill="#00E676" filter="url(#glow)"/>
+  <text x="970" y="65" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="600" font-size="12">LIVE SYNC</text>
+
+  <rect x="1055" y="45" width="85" height="30" rx="15" fill="rgba(122, 32, 162, 0.3)" stroke="#7A20A2" stroke-width="1"/>
+  <text x="1073" y="65" fill="#E1BEE7" font-family="system-ui, sans-serif" font-weight="600" font-size="12">AGENTIC</text>
+
+  <!-- Metric Card 1: Requisitions Processed -->
+  <rect x="40" y="115" width="260" height="110" rx="14" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="65" y="145" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">DICOM &amp; REQUISITIONS</text>
+  <text x="65" y="185" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="32" font-weight="800">1,500,000+</text>
+  <text x="65" y="210" fill="#00E676" font-family="system-ui, sans-serif" font-size="12" font-weight="600">↑ 99.8% Automated Intake</text>
+
+  <!-- Metric Card 2: Hours Saved -->
+  <rect x="325" y="115" width="260" height="110" rx="14" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="350" y="145" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">CLINICAL HOURS SAVED</text>
+  <text x="350" y="185" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="32" font-weight="800">100+ hrs/wk</text>
+  <text x="350" y="210" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Zero duplicate data entry</text>
+
+  <!-- Metric Card 3: Booking Time -->
+  <rect x="610" y="115" width="260" height="110" rx="14" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="635" y="145" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">PATIENT BOOKING ACCELERATION</text>
+  <text x="635" y="185" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="32" font-weight="800">3 wks → 1 day</text>
+  <text x="635" y="210" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="12" font-weight="600">85% Faster scheduling cycle</text>
+
+  <!-- Metric Card 4: EHR Protocoling -->
+  <rect x="895" y="115" width="265" height="110" rx="14" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="920" y="145" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">AI PROTOCOL COMPLIANCE</text>
+  <text x="920" y="185" fill="#BA68C8" font-family="system-ui, sans-serif" font-size="32" font-weight="800">100%</text>
+  <text x="920" y="210" fill="#00E676" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Verified FHIR &amp; HL7 v2/v3</text>
+
+  <!-- Main Chart Area -->
+  <rect x="40" y="245" width="750" height="390" rx="16" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="70" y="285" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Automated Patient Intake &amp; Predictive Capacity</text>
+  <text x="70" y="308" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Real-time throughput comparison across Hospital Diagnostic Imaging &amp; ER</text>
+
+  <!-- Graph Grid -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-dasharray="4,4">
+    <line x1="70" y1="360" x2="740" y2="360"/>
+    <line x1="70" y1="430" x2="740" y2="430"/>
+    <line x1="70" y1="500" x2="740" y2="500"/>
+    <line x1="70" y1="570" x2="740" y2="570"/>
+  </g>
+
+  <!-- Chart Path Glowing -->
+  <path d="M 80 550 Q 180 520, 260 440 T 420 370 T 560 320 T 730 290" fill="none" stroke="url(#lineGrad)" stroke-width="4" filter="url(#glow)"/>
+  <path d="M 80 550 Q 180 520, 260 440 T 420 370 T 560 320 T 730 290 L 730 580 L 80 580 Z" fill="url(#cyanGrad)" fill-opacity="0.08"/>
+
+  <!-- Chart Nodes -->
+  <circle cx="260" cy="440" r="6" fill="#24C6DA" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="420" cy="370" r="6" fill="#BA68C8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="560" cy="320" r="6" fill="#24C6DA" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="730" cy="290" r="7" fill="#00E5FF" stroke="#FFFFFF" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Right Side Panel: Agentic Engine Active Queues -->
+  <rect x="815" y="245" width="345" height="390" rx="16" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="840" y="285" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Autonomous Agents</text>
+
+  <!-- Agent 1 -->
+  <rect x="835" y="310" width="305" height="65" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(36, 198, 218, 0.3)" stroke-width="1"/>
+  <circle cx="860" cy="342" r="12" fill="rgba(36, 198, 218, 0.2)"/>
+  <text x="856" y="347" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">DI</text>
+  <text x="885" y="337" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">GoAutomateDI Agent</text>
+  <text x="885" y="357" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Protocoling MRI requisition #48291</text>
+  <circle cx="1115" cy="342" r="4" fill="#00E676"/>
+
+  <!-- Agent 2 -->
+  <rect x="835" y="390" width="305" height="65" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(122, 32, 162, 0.3)" stroke-width="1"/>
+  <circle cx="860" cy="422" r="12" fill="rgba(122, 32, 162, 0.3)"/>
+  <text x="855" y="427" fill="#BA68C8" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">RX</text>
+  <text x="885" y="417" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">GoAutomateRX Extractor</text>
+  <text x="885" y="437" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">OCR dosage verification completed</text>
+  <circle cx="1115" cy="422" r="4" fill="#00E676"/>
+
+  <!-- Agent 3 -->
+  <rect x="835" y="470" width="305" height="65" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(36, 198, 218, 0.3)" stroke-width="1"/>
+  <circle cx="860" cy="502" r="12" fill="rgba(36, 198, 218, 0.2)"/>
+  <text x="853" y="507" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="bold" font-size="11">DICOM</text>
+  <text x="885" y="497" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">DICOM Anonymizer</text>
+  <text x="885" y="517" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">De-identified PACS study (CT Chest)</text>
+  <circle cx="1115" cy="502" r="4" fill="#00E676"/>
+
+  <!-- Agent 4 -->
+  <rect x="835" y="550" width="305" height="65" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(122, 32, 162, 0.3)" stroke-width="1"/>
+  <circle cx="860" cy="582" r="12" fill="rgba(122, 32, 162, 0.3)"/>
+  <text x="856" y="587" fill="#BA68C8" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">ER</text>
+  <text x="885" y="577" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">GoAutomateER Triage</text>
+  <text x="885" y="597" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Synthesized bloodwork &amp; history</text>
+  <circle cx="1115" cy="582" r="4" fill="#00E676"/>
+</svg>

@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="erBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09041a"/>
+      <stop offset="50%" stop-color="#140833"/>
+      <stop offset="100%" stop-color="#050212"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </linearGradient>
+    <linearGradient id="neonTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#00B0FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#erBg)"/>
+
+  <!-- Top Title -->
+  <text x="600" y="55" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">GoAutomateER: Intelligent Emergency Department Automation</text>
+  <text x="600" y="85" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="15">Instant Prior History Retrieval, Predictive Triage &amp; Bed Capacity Balancing</text>
+
+  <!-- Left: Patient Triage Stream -->
+  <g transform="translate(60, 130)">
+    <rect width="340" height="490" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="20" y="20" width="300" height="40" rx="8" fill="rgba(255,82,82,0.15)" stroke="#FF5252" stroke-width="1"/>
+    <circle cx="40" cy="40" r="5" fill="#FF5252"/>
+    <text x="55" y="45" fill="#FF8A80" font-family="system-ui, sans-serif" font-size="14" font-weight="700">CTAS Priority Triage Stream</text>
+
+    <!-- Queue Card 1 (Critical) -->
+    <g transform="translate(20, 80)">
+      <rect width="300" height="85" rx="10" fill="#1b0e2b" stroke="#FF5252" stroke-width="1.5"/>
+      <text x="15" y="25" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Patient #ER-1092 • CTAS Level 1</text>
+      <text x="15" y="45" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Acute Chest Pain / STEMI Alert</text>
+      <rect x="15" y="55" width="130" height="20" rx="4" fill="rgba(255,82,82,0.2)"/>
+      <text x="22" y="69" fill="#FF8A80" font-family="system-ui, sans-serif" font-size="10" font-weight="600">CARD TRACK: IMMEDIATE</text>
+    </g>
+
+    <!-- Queue Card 2 (High) -->
+    <g transform="translate(20, 180)">
+      <rect width="300" height="85" rx="10" fill="#1b0e2b" stroke="#FFB300" stroke-width="1.5"/>
+      <text x="15" y="25" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Patient #ER-1093 • CTAS Level 2</text>
+      <text x="15" y="45" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Suspected Stroke (Last seen 45m)</text>
+      <rect x="15" y="55" width="130" height="20" rx="4" fill="rgba(255,179,0,0.2)"/>
+      <text x="22" y="69" fill="#FFE082" font-family="system-ui, sans-serif" font-size="10" font-weight="600">CT SCAN: AUTO-ROUTED</text>
+    </g>
+
+    <!-- Queue Card 3 (Medium) -->
+    <g transform="translate(20, 280)">
+      <rect width="300" height="85" rx="10" fill="#1b0e2b" stroke="#24C6DA" stroke-width="1.5"/>
+      <text x="15" y="25" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Patient #ER-1094 • CTAS Level 3</text>
+      <text x="15" y="45" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Abdominal Pain / Stable Vitals</text>
+      <rect x="15" y="55" width="130" height="20" rx="4" fill="rgba(36,198,218,0.2)"/>
+      <text x="22" y="69" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ULTRASOUND: QUEUED</text>
+    </g>
+
+    <!-- Queue Card 4 (Stable) -->
+    <g transform="translate(20, 380)">
+      <rect width="300" height="85" rx="10" fill="#1b0e2b" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="15" y="25" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Patient #ER-1095 • CTAS Level 4</text>
+      <text x="15" y="45" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Sprain / Ambulatory Care</text>
+      <rect x="15" y="55" width="130" height="20" rx="4" fill="rgba(255,255,255,0.1)"/>
+      <text x="22" y="69" fill="#CFD8DC" font-family="system-ui, sans-serif" font-size="10" font-weight="600">X-RAY FAST TRACK</text>
+    </g>
+  </g>
+
+  <!-- Middle: Autonomous Record Puller -->
+  <g transform="translate(430, 130)">
+    <rect width="380" height="490" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="20" y="20" width="340" height="40" rx="8" fill="rgba(122,32,162,0.25)" stroke="#7A20A2" stroke-width="1"/>
+    <text x="35" y="45" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Instant Clinical Record Synthesis</text>
+
+    <!-- Synthesized View -->
+    <g transform="translate(20, 80)">
+      <rect width="340" height="110" rx="10" fill="#170c2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="15" y="25" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="12" font-weight="700">HISTORICAL EHR RECORDS AUTO-PULLED</text>
+      <text x="15" y="50" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">✓ Prior ECGs pulled from 2024</text>
+      <text x="15" y="72" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">✓ Current Medications: Metoprolol, ASA</text>
+      <text x="15" y="94" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">✓ Critical Allergies: Penicillin (Severe)</text>
+    </g>
+
+    <!-- Lab Pipeline -->
+    <g transform="translate(20, 205)">
+      <rect width="340" height="110" rx="10" fill="#170c2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="15" y="25" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="12" font-weight="700">REAL-TIME LAB RESULT CORRELATION</text>
+      <text x="15" y="50" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">Troponin I: 0.85 ng/mL [ELEVATED]</text>
+      <text x="15" y="72" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">Creatinine: 82 µmol/L [NORMAL]</text>
+      <text x="15" y="94" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13">WBC: 11.2 x10^9/L [SLIGHT ELEVATION]</text>
+    </g>
+
+    <!-- Agent Note -->
+    <g transform="translate(20, 330)">
+      <rect width="340" height="135" rx="10" fill="rgba(36,198,218,0.08)" stroke="#24C6DA" stroke-width="1"/>
+      <text x="15" y="25" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="13" font-weight="700">AI Clinical Note Summary</text>
+      <text x="15" y="50" fill="#ECEFF1" font-family="system-ui, sans-serif" font-size="12" width="310">
+        "Patient presents with sudden-onset pressure-type
+      </text>
+      <text x="15" y="68" fill="#ECEFF1" font-family="system-ui, sans-serif" font-size="12">
+        retrosternal chest pain. Elevated troponin and
+      </text>
+      <text x="15" y="86" fill="#ECEFF1" font-family="system-ui, sans-serif" font-size="12">
+        ST changes match urgent catheterization protocol.
+      </text>
+      <text x="15" y="112" fill="#00E676" font-family="system-ui, sans-serif" font-size="12" font-weight="700">
+        Bed pre-allocated in CCU. Zero wait time.
+      </text>
+    </g>
+  </g>
+
+  <!-- Right: Capacity & Resource Heatmap -->
+  <g transform="translate(840, 130)">
+    <rect width="300" height="490" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="20" y="20" width="260" height="40" rx="8" fill="rgba(36,198,218,0.15)" stroke="#24C6DA" stroke-width="1"/>
+    <text x="35" y="45" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Hospital Capacity Matrix</text>
+
+    <!-- Stat 1 -->
+    <g transform="translate(20, 80)">
+      <rect width="260" height="75" rx="10" fill="#170c2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="15" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">ER OCCUPANCY</text>
+      <text x="15" y="55" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="24" font-weight="800">78%</text>
+      <text x="110" y="55" fill="#00E676" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Optimal Flow</text>
+    </g>
+
+    <!-- Stat 2 -->
+    <g transform="translate(20, 170)">
+      <rect width="260" height="75" rx="10" fill="#170c2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="15" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">AVERAGE DOOR-TO-DOCTOR</text>
+      <text x="15" y="55" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="24" font-weight="800">18 Mins</text>
+      <text x="130" y="55" fill="#00E676" font-family="system-ui, sans-serif" font-size="12" font-weight="600">-64% vs State</text>
+    </g>
+
+    <!-- Stat 3 -->
+    <g transform="translate(20, 260)">
+      <rect width="260" height="75" rx="10" fill="#170c2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="15" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">CT/MRI AVAILABILITY</text>
+      <text x="15" y="55" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="24" font-weight="800">2 Suites Ready</text>
+    </g>
+
+    <!-- Key metric -->
+    <g transform="translate(20, 350)">
+      <rect width="260" height="115" rx="10" fill="rgba(122,32,162,0.2)" stroke="#7A20A2" stroke-width="1"/>
+      <text x="15" y="28" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Predictive Surges</text>
+      <text x="15" y="52" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">AI anticipates inbound EMS</text>
+      <text x="15" y="70" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">arrivals based on regional alerts,</text>
+      <text x="15" y="88" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">dynamically pre-allocating beds.</text>
+    </g>
+  </g>
+</svg>

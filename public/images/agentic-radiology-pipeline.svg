@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="radBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a051d"/>
+      <stop offset="60%" stop-color="#140a33"/>
+      <stop offset="100%" stop-color="#070214"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0"/>
+      <stop offset="100%" stop-color="#673AB7"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BCD4"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <filter id="radGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#radBg)"/>
+
+  <!-- Title & Header -->
+  <text x="600" y="60" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">GoAutomateDI: Autonomous Radiology &amp; DICOM Pipeline</text>
+  <text x="600" y="90" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="15" font-weight="500">End-to-End Intelligent Protocoling, HIPAA/PHIPA De-identification &amp; PACS Routing</text>
+
+  <!-- Step 1: Ingestion -->
+  <g transform="translate(60, 140)">
+    <rect width="220" height="420" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <rect x="20" y="25" width="50" height="50" rx="12" fill="url(#purpleGrad)"/>
+    <!-- Fax / Doc icon -->
+    <path d="M 38 40 L 52 40 L 52 58 L 38 58 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="42" y1="46" x2="48" y2="46" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="42" y1="52" x2="48" y2="52" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="20" y="110" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">1. Multimodal Intake</text>
+    <text x="20" y="140" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="400">Captures incoming clinical requests across all formats:</text>
+    
+    <rect x="20" y="180" width="180" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="205" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">📄 Faxed Requisitions</text>
+    <rect x="20" y="235" width="180" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="260" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">🌐 Ocean eReferrals</text>
+    <rect x="20" y="290" width="180" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="315" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">📡 HL7 / FHIR Feeds</text>
+    <rect x="20" y="345" width="180" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="370" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">🏥 EHR Direct Orders</text>
+  </g>
+
+  <!-- Connector 1 -->
+  <path d="M 280 350 L 340 350" fill="none" stroke="#24C6DA" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="340,345 350,350 340,355" fill="#24C6DA"/>
+
+  <!-- Step 2: AI OCR & Entity Extraction -->
+  <g transform="translate(350, 140)">
+    <rect width="220" height="420" rx="16" fill="rgba(255,255,255,0.04)" stroke="#7A20A2" stroke-width="2"/>
+    <rect x="20" y="25" width="50" height="50" rx="12" fill="url(#purpleGrad)"/>
+    <!-- Brain / AI icon -->
+    <circle cx="45" cy="50" r="12" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="20" y="110" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">2. Vision &amp; OCR</text>
+    <text x="20" y="140" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Deep learning entity extraction &amp; handwriting resolution:</text>
+
+    <rect x="20" y="180" width="180" height="40" rx="8" fill="rgba(122, 32, 162, 0.15)" stroke="rgba(122, 32, 162, 0.4)"/>
+    <text x="35" y="205" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="13">🔍 Clinical Entity NER</text>
+    <rect x="20" y="235" width="180" height="40" rx="8" fill="rgba(122, 32, 162, 0.15)" stroke="rgba(122, 32, 162, 0.4)"/>
+    <text x="35" y="260" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="13">📋 Auto Field Parsing</text>
+    <rect x="20" y="290" width="180" height="40" rx="8" fill="rgba(122, 32, 162, 0.15)" stroke="rgba(122, 32, 162, 0.4)"/>
+    <text x="35" y="315" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="13">🛡️ Anonymization Engine</text>
+    <rect x="20" y="345" width="180" height="40" rx="8" fill="rgba(122, 32, 162, 0.15)" stroke="rgba(122, 32, 162, 0.4)"/>
+    <text x="35" y="370" fill="#E1BEE7" font-family="system-ui, sans-serif" font-size="13">⚡ Confidence Scoring</text>
+  </g>
+
+  <!-- Connector 2 -->
+  <path d="M 570 350 L 630 350" fill="none" stroke="#7A20A2" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="630,345 640,350 630,355" fill="#7A20A2"/>
+
+  <!-- Step 3: Agentic AI Protocoling -->
+  <g transform="translate(640, 140)">
+    <rect width="220" height="420" rx="16" fill="rgba(255,255,255,0.04)" stroke="#24C6DA" stroke-width="2"/>
+    <rect x="20" y="25" width="50" height="50" rx="12" fill="url(#tealGrad)"/>
+    <!-- Lightning / Agent icon -->
+    <polygon points="45,35 38,50 46,50 43,65 52,48 45,48" fill="#0A051D"/>
+    <text x="20" y="110" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">3. Agent Protocoling</text>
+    <text x="20" y="140" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Autonomous clinical verification against hospital standards:</text>
+
+    <rect x="20" y="180" width="180" height="40" rx="8" fill="rgba(36, 198, 218, 0.15)" stroke="rgba(36, 198, 218, 0.4)"/>
+    <text x="35" y="205" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="13">🎯 Modality Matching</text>
+    <rect x="20" y="235" width="180" height="40" rx="8" fill="rgba(36, 198, 218, 0.15)" stroke="rgba(36, 198, 218, 0.4)"/>
+    <text x="35" y="260" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="13">⏱️ Acuity Prioritization</text>
+    <rect x="20" y="290" width="180" height="40" rx="8" fill="rgba(36, 198, 218, 0.15)" stroke="rgba(36, 198, 218, 0.4)"/>
+    <text x="35" y="315" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="13">⚠️ Contraindication Check</text>
+    <rect x="20" y="345" width="180" height="40" rx="8" fill="rgba(36, 198, 218, 0.15)" stroke="rgba(36, 198, 218, 0.4)"/>
+    <text x="35" y="370" fill="#80DEEA" font-family="system-ui, sans-serif" font-size="13">✅ Radiologist Signoff</text>
+  </g>
+
+  <!-- Connector 3 -->
+  <path d="M 860 350 L 920 350" fill="none" stroke="#24C6DA" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="920,345 930,350 920,355" fill="#24C6DA"/>
+
+  <!-- Step 4: Downstream PACS & EHR Integration -->
+  <g transform="translate(930, 140)">
+    <rect width="210" height="420" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <rect x="20" y="25" width="50" height="50" rx="12" fill="url(#tealGrad)"/>
+    <!-- Server / Network icon -->
+    <rect x="35" y="42" width="20" height="7" rx="2" fill="#0A051D"/>
+    <rect x="35" y="52" width="20" height="7" rx="2" fill="#0A051D"/>
+    <text x="20" y="110" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">4. PACS &amp; EHR Sync</text>
+    <text x="20" y="140" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Instant dispatch into clinical core:</text>
+
+    <rect x="20" y="180" width="170" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="205" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">💾 DICOM 3 Server</text>
+    <rect x="20" y="235" width="170" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="260" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">🏥 Epic / Cerner / Meditech</text>
+    <rect x="20" y="290" width="170" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="315" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">📅 Auto Modality Worklist</text>
+    <rect x="20" y="345" width="170" height="40" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="35" y="370" fill="#00E676" font-family="system-ui, sans-serif" font-size="13" font-weight="600">✓ Booking: 1-2 Days</text>
+  </g>
+
+  <!-- Bottom Banner -->
+  <rect x="60" y="590" width="1080" height="45" rx="10" fill="rgba(36, 198, 218, 0.08)" stroke="rgba(36, 198, 218, 0.25)" stroke-width="1"/>
+  <text x="600" y="618" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14">
+    <tspan fill="#00E5FF" font-weight="700">Proven Results:</tspan> Reduced DI booking backlog from 3 weeks to 24-48 hours with 100+ frontline hours saved per week.
+  </text>
+</svg>

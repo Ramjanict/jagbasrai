@@ -1,180 +1,220 @@
-# 🏥 Jagbasrai — Official Website
+# 🏥 GoAutomateMD — Intelligent Healthcare Automation Platform
 
-> A modern, multilingual, AI-assisted website built with **Next.js 16**, **TypeScript**, and **Tailwind CSS v4**. Designed to go fully paperless with digital, AI-powered protocols that boost efficiency and improve accuracy.
+<p align="center">
+  <img src="public/images/healthcare-ai-dashboard.svg" alt="GoAutomateMD Command Center" width="100%" />
+</p>
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)
-![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)
+<p align="center">
+  <strong>Enterprise Agentic AI &amp; Next-Generation Clinical Workflow Orchestration</strong>
+</p>
 
-[![Live Site](https://img.shields.io/badge/🌐%20Live%20Site-goautomatemd.com-success?style=flat-square)](https://goautomatemd.com)
-[![Preview](https://img.shields.io/badge/🔗%20Preview-clientproject--ten.vercel.app-blue?style=flat-square&logo=vercel)](https://clientproject-ten.vercel.app)
+<p align="center">
+  <a href="https://goautomatemd.com"><img src="https://img.shields.io/badge/🌐%20Production%20Site-goautomatemd.com-10b981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Production Site" /></a>
+  <a href="https://clientproject-ten.vercel.app"><img src="https://img.shields.io/badge/🔗%20Vercel%20Preview-clientproject--ten.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white" alt="Preview URL" /></a>
+</p>
 
----
-
-## 🌐 Live URLs
-
-| Environment        | URL                                                                 |
-|--------------------|---------------------------------------------------------------------|
-| 🚀 **Production**  | [https://goautomatemd.com](https://goautomatemd.com)               |
-| 🔗 **Preview**     | [https://clientproject-ten.vercel.app](https://clientproject-ten.vercel.app) |
-
----
-
-## ✨ Features
-
-- ⚡ **Next.js 16** with App Router & Turbopack for blazing-fast development
-- 🎨 **Tailwind CSS v4** — utility-first styling with zero-config setup
-- 🌍 **Internationalisation (i18n)** powered by `next-intl`
-- 🔐 **Authentication** via `next-auth`
-- 📋 **Form handling** with `react-hook-form` + `zod` schema validation
-- 🤖 **Google reCAPTCHA v2** integration
-- 🗺️ **Auto-generated sitemap** using `next-sitemap`
-- 📊 **Charts & Data Visualisation** with `recharts`
-- 🎞️ **Smooth animations** via `framer-motion`
-- 🛒 **State management** with Redux Toolkit + Redux Persist
-- 🍪 **Cookie banner & GA4 consent** management
-- 📱 **Fully responsive** layout across all devices
-- 🧩 **Radix UI** component primitives for accessibility-first design
-- 🔗 **SEO-optimised** with custom `<Seo />` component & metadata API
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
+  <img src="https://img.shields.io/badge/Standards-HL7_%7C_FHIR_%7C_DICOM_3-7A20A2?style=flat-square" alt="Healthcare Standards" />
+  <img src="https://img.shields.io/badge/Compliance-HIPAA_%7C_PHIPA-059669?style=flat-square" alt="Compliance" />
+</p>
 
 ---
 
-## 🗂️ Project Structure
+## 📖 Executive Overview
+
+**GoAutomateMD** (led by CEO &amp; Founder **Jag Basrai**) is a clinical-grade healthcare automation platform designed to eliminate paper-bound delays, administrative bottlenecks, and clinical burnout across modern health systems. 
+
+Leveraging **Agentic AI**, proprietary computer vision, and medical natural language processing, GoAutomateMD transforms hospital departments—from Diagnostic Imaging and Emergency Rooms to Pharmacies and Labs—into synchronized, paperless environments.
+
+### 🌟 Key Real-World Impact
+- ⚡ **Booking Acceleration:** Reduced Diagnostic Imaging booking backlogs from **2–3 weeks to 1–2 days**.
+- ⏱️ **Frontline Relief:** Saved **100+ clinical and administrative hours per week** for hospital teams.
+- 📄 **1.5M+ Studies & Requisitions:** Automated intake, OCR, and validation of faxes, handwritten notes, and electronic referrals.
+- 🔗 **Zero Rip-and-Replace:** Integrates transparently with existing HIS, RIS, and PACS installations without workflow disruption.
+
+---
+
+## 🏛️ Autonomous Product Suite
+
+<p align="center">
+  <img src="public/images/agentic-radiology-pipeline.svg" alt="Autonomous Radiology Pipeline" width="100%" />
+</p>
+
+| Product | Focus Area | Description |
+|---|---|---|
+| **GoAutomateDI** | **Diagnostic Imaging** | Eliminates manual protocoling with automated acuity matching, modality assignment, and radiologist review queues. |
+| **GoAutomateRX** | **Pharmacy &amp; Prescriptions** | High-precision medical OCR extracts dosages, frequencies, and instructions from handwritten or faxed scripts into structured pharmacy systems. |
+| **GoAutomateLAB** | **Laboratory Workflows** | Replaces paper requisitions and pneumatic tube bottlenecks with digitized intake, specimen tracking, and automated result dispatch. |
+| **GoAutomateER** | **Emergency Departments** | Correlates real-time patient triage (CTAS), auto-pulls previous EHR visits, and predicts bed and imaging capacity. |
+| **GoAutomateCARD** | **Clinical Cardiology** | Coordinates cardiac diagnostics, ECG comparisons, and multi-department specialty routing. |
+| **GoAutomateDICOM** | **PACS &amp; Imaging Engine** | Conforms to DICOM 3 standards, executing automated metadata anonymization and intelligent routing to hospital PACS archives. |
+
+---
+
+## 🔌 Interoperability &amp; Clinical Integrations
+
+<p align="center">
+  <img src="public/images/ehr-interoperability-hub.svg" alt="Healthcare Interoperability Matrix" width="100%" />
+</p>
+
+GoAutomateMD bridges the gap between legacy paper tools and modern electronic health records:
+
+- **Electronic Health Records (EHR / HIS):** Native bidirectional sync with **Epic Systems** (FHIR / App Orchard), **Oracle Health / Cerner** (Ignite APIs), and **MEDITECH Expanse**.
+- **Imaging Systems (PACS / RIS):** Full DICOM 3 compliance, modality worklist (MWL) management, and C-STORE image dispatch.
+- **Data Exchange Protocols:** HL7 (v2 &amp; v3), HL7 FHIR (Fast Healthcare Interoperability Resources), and RESTful APIs.
+- **Regional Referral Networks:** Direct integration with the **Ocean eReferral Network** and provincial digital health feeds.
+
+---
+
+## 🔬 AI Capabilities &amp; Architecture
+
+<p align="center">
+  <img src="public/images/smart-prescription-extractor.svg" alt="Prescription Extraction Pipeline" width="100%" />
+</p>
+
+- **Computer Vision &amp; Medical OCR:** Specially trained on medical terminology, physician handwriting, and multi-column clinical fax templates.
+- **DICOM Anonymization Engine:** Strips Protected Health Information (PHI) and PII from imaging headers and pixel data, maintaining strict HIPAA and PHIPA compliance.
+- **Clinical Note Summarization:** Synthesizes dense longitudinal medical histories into actionable, prioritized summaries for physicians.
+- **Predictive Operational Analytics:** Forecasts departmental patient surges, equipment utilization, and staffing shortages to optimize bed allocation.
+
+---
+
+## 🚑 Emergency Department Automation
+
+<p align="center">
+  <img src="public/images/emergency-triage-ai.svg" alt="Emergency Department Automation" width="100%" />
+</p>
+
+---
+
+## 💻 Tech Stack &amp; Engineering
+
+- **Core Framework:** [Next.js 16](https://nextjs.org/) (App Router, Turbopack, React 19)
+- **Language:** [TypeScript 5](https://www.typescriptlang.org/) (Strict type safety)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with custom design tokens
+- **UI Components:** [Radix UI Primitives](https://www.radix-ui.com/), [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+- **Motion &amp; Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Data Visualizations:** [Recharts](https://recharts.org/)
+- **Forms &amp; Validation:** React Hook Form + [Zod](https://zod.dev/)
+- **Localization (i18n):** `next-intl` &amp; Google Cloud Translation API (Seamless English / French switching)
+- **Compliance &amp; Analytics:** Google Analytics 4 Consent Mode v2, granular cookie banner, and Google reCAPTCHA v2
+- **SEO &amp; Structured Data:** `next-sitemap`, JSON-LD Organization schema, dynamic OpenGraph &amp; Twitter cards
+
+---
+
+## 📁 Repository Structure
 
 ```
 jagbasrai/
-├── app/                   # Next.js App Router
-│   ├── (home)/            # Route group: home, about, news, privacy
-│   ├── api/               # API route handlers
-│   ├── metadata/          # Shared metadata configuration
-│   ├── globals.css        # Global styles
-│   └── layout.tsx         # Root layout
-├── components/            # Reusable UI components
-│   ├── home/              # Homepage sections
-│   ├── about/             # About page components
-│   ├── news/              # News & blog section
-│   ├── blog/              # Blog components
-│   ├── common/            # Shared layout (Header, Footer, etc.)
-│   ├── reuseable/         # Generic reusable elements
-│   ├── ui/                # Radix-based shadcn/ui primitives
-│   ├── CookieBanner.tsx   # Cookie consent banner
-│   ├── GA4Consent.tsx     # Google Analytics 4 consent
-│   ├── Seo.tsx            # SEO meta component
-│   └── ToastProvider.tsx  # React-Toastify provider
-├── lib/                   # Utilities, helpers, API clients
-├── public/                # Static assets (images, icons, fonts, videos)
-├── help/                  # Internal docs / content helpers
-├── next.config.ts         # Next.js configuration
-├── next-sitemap.config.js # Sitemap configuration
-├── tsconfig.json          # TypeScript configuration
-└── vercel.json            # Vercel deployment settings
+├── app/                           # Next.js App Router
+│   ├── (home)/                    # Route group
+│   │   ├── about/                 # About GoAutomateMD & executive mission
+│   │   ├── home/                  # Landing page sections
+│   │   ├── news/                  # Press releases & hospital case studies
+│   │   ├── privacy/               # Privacy policy & regulatory compliance
+│   │   └── page.tsx               # Root entry page
+│   ├── api/                       # API route handlers
+│   │   └── translate/             # On-demand cloud translation service
+│   ├── metadata/                  # SEO & OpenGraph metadata definitions
+│   ├── globals.css                # Tailwind CSS v4 styling rules
+│   └── layout.tsx                 # Root layout, fonts & consent providers
+├── components/                    # Reusable React components
+│   ├── about/                     # About page masonry, hero, & scroll stack
+│   ├── common/                    # Navbar, Footer, buttons, typography
+│   ├── home/                      # Hero, Products, Services, Case Studies
+│   ├── news/                      # Article cards & media grid
+│   ├── ui/                        # Radix UI primitives & shadcn components
+│   ├── CookieBanner.tsx           # Cookie consent banner
+│   ├── GA4Consent.tsx             # Google Analytics 4 consent manager
+│   ├── Seo.tsx                    # SEO meta helper
+│   └── translated-text.tsx        # Dynamic localization wrapper (<T>)
+├── help/                          # Media & string utilities
+├── lib/                           # Translation context, cookie store, client utils
+├── public/                        # Static assets
+│   ├── fonts/                     # Helvetica & brand typography
+│   ├── images/                    # UI illustrations, SVGs, diagrams, video covers
+│   └── video/                     # Case study walkthroughs & demos
+├── next-sitemap.config.js         # Sitemap generation config
+├── next.config.ts                 # Next.js configuration
+├── package.json                   # Dependencies and scripts
+├── tsconfig.json                  # TypeScript compiler settings
+└── vercel.json                    # Edge routing and security headers
 ```
 
 ---
 
-## 🛠️ Tech Stack
-
-| Category          | Technology                                      |
-|------------------|-------------------------------------------------|
-| Framework         | [Next.js 16](https://nextjs.org/)              |
-| Language          | TypeScript 5                                   |
-| Styling           | Tailwind CSS v4                                |
-| UI Primitives     | Radix UI + shadcn/ui                           |
-| State Management  | Redux Toolkit + Redux Persist                  |
-| Forms             | React Hook Form + Zod                          |
-| Auth              | NextAuth.js                                    |
-| i18n              | next-intl                                      |
-| Animations        | Framer Motion                                  |
-| Charts            | Recharts                                       |
-| Carousels         | Swiper, Embla Carousel, React Slick            |
-| Deployment        | Vercel                                         |
-
----
-
-## ⚙️ Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- **Node.js** >= 18.x
-- **npm** >= 9.x (or `yarn` / `pnpm` / `bun`)
+- **Node.js** >= 18.18.0 (Node 20+ LTS recommended)
+- **npm** >= 9.x (or `pnpm` / `yarn` / `bun`)
 
-### 1. Clone the repository
+### 1. Clone &amp; Install
 
 ```bash
 git clone https://github.com/Ramjanict/jagbasrai.git
 cd jagbasrai
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
 ```
 
-### 3. Set up environment variables
+### 2. Configure Environment Variables
 
-Create a `.env.local` file in the root directory and add:
+Create a `.env.local` file in the root directory:
 
 ```env
+# NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_SECRET=your_nextauth_secret_key
 
+# Security & Verification
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your_recaptcha_site_key
-GOOGLE_TRANSLATE_API_KEY=your_google_translate_api_key
 NEXT_PUBLIC_GA_ID=your_ga4_measurement_id
+
+# Cloud Services
+GOOGLE_TRANSLATE_API_KEY=your_google_cloud_translate_api_key
 ```
 
-### 4. Run the development server
+### 3. Launch Development Server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. 🚀
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 4. Build for Production
+
+```bash
+npm run build
+npm run start
+```
 
 ---
 
-## 📦 Available Scripts
+## 🌐 Production Deployment
 
-| Command           | Description                              |
-|------------------|------------------------------------------|
-| `npm run dev`    | Start dev server with Turbopack          |
-| `npm run build`  | Production build + generate sitemap      |
-| `npm run start`  | Start production server                  |
-| `npm run lint`   | Run ESLint checks                        |
+The project is hosted and continuously deployed on [Vercel](https://vercel.com):
+
+- **Production Domain:** [https://goautomatemd.com](https://goautomatemd.com)
+- **Preview Deployment:** [https://clientproject-ten.vercel.app](https://clientproject-ten.vercel.app)
 
 ---
 
-## 🚢 Deployment
+## 🛡️ Privacy, Security &amp; Compliance
 
-This project is optimised for **[Vercel](https://vercel.com)**. Push to `main` and Vercel will auto-deploy.
-
-| Environment        | URL                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------|
-| 🚀 **Production**  | [https://goautomatemd.com](https://goautomatemd.com)                                 |
-| 🔗 **Preview**     | [https://clientproject-ten.vercel.app](https://clientproject-ten.vercel.app)         |
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ramjanict/jagbasrai)
+GoAutomateMD is built from the ground up for strict healthcare standards:
+- **Zero-Storage Image De-identification:** Sensitive patient data in DICOM headers and medical requisitions is scrubbed prior to model processing.
+- **Granular Consent:** Built-in cookie management compliant with GDPR, PIPEDA, and PHIPA standards.
+- **Bot Mitigation:** Google reCAPTCHA v2 guards form submissions against automated attacks.
 
 ---
 
-## 🤝 Contributing
+## 📄 License &amp; Ownership
 
-Contributions are welcome! Please open an issue first to discuss what you'd like to change.
-
-1. Fork the project
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'feat: add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is proprietary. All rights reserved © Jagbasrai.
-
----
-
-<p align="center">Built with ❤️ using Next.js & Tailwind CSS</p>
+Copyright © 2024–2026 **GoAutomateMD** / **Jag Basrai**. All rights reserved.  
+Proprietary healthcare automation software. Unauthorized reproduction, modification, or distribution is strictly prohibited.

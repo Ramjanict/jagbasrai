@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hubBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070318"/>
+      <stop offset="50%" stop-color="#12082b"/>
+      <stop offset="100%" stop-color="#050212"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A20A2"/>
+      <stop offset="100%" stop-color="#00BCD4"/>
+    </linearGradient>
+    <filter id="hubGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#hubBg)"/>
+
+  <!-- Heading -->
+  <text x="600" y="55" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">Healthcare Interoperability &amp; System Integration Matrix</text>
+  <text x="600" y="85" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="15">Connecting Disparate Hospital Systems Without Rip-and-Replace Disruption</text>
+
+  <!-- Central Hub: GoAutomateMD AI Core -->
+  <g transform="translate(600, 350)">
+    <!-- Outer Orbital Rings -->
+    <circle r="220" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" stroke-dasharray="6,6"/>
+    <circle r="140" fill="none" stroke="rgba(36, 198, 218, 0.25)" stroke-width="2"/>
+
+    <!-- Central Glowing Core -->
+    <circle r="75" fill="url(#coreGrad)" filter="url(#hubGlow)" opacity="0.4"/>
+    <circle r="65" fill="#1A0D38" stroke="#00E5FF" stroke-width="2.5"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">GoAutomateMD</text>
+    <text x="0" y="14" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-size="12" font-weight="700">INTELLIGENT CORE</text>
+    <text x="0" y="32" text-anchor="middle" fill="#BA68C8" font-family="system-ui, sans-serif" font-size="10">Agentic Orchestration</text>
+  </g>
+
+  <!-- Connection Rays to Satellites -->
+  <!-- 1: Top Left - Epic Systems -->
+  <line x1="600" y1="350" x2="250" y2="180" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(250, 180)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(0, 229, 255, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#00E5FF" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">EPIC</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Epic Systems</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">FHIR APIs &amp; App Orchard</text>
+  </g>
+
+  <!-- 2: Top Right - Cerner / Oracle Health -->
+  <line x1="600" y1="350" x2="950" y2="180" stroke="#BA68C8" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(950, 180)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#BA68C8" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(186, 104, 200, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#BA68C8" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">CRN</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Oracle Cerner</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Millennium &amp; Ignite APIs</text>
+  </g>
+
+  <!-- 3: Left - MEDITECH -->
+  <line x1="600" y1="350" x2="160" y2="350" stroke="#24C6DA" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(160, 350)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#24C6DA" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(36, 198, 218, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">MED</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">MEDITECH</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Expanse Data Exchange</text>
+  </g>
+
+  <!-- 4: Right - PACS & DICOM 3 -->
+  <line x1="600" y1="350" x2="1040" y2="350" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(1040, 350)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(0, 229, 255, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#00E5FF" font-family="system-ui, sans-serif" font-weight="bold" font-size="11">PACS</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">PACS / DICOM 3</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Modality Worklists &amp; C-STORE</text>
+  </g>
+
+  <!-- 5: Bottom Left - HL7 (v2 & v3) & FHIR -->
+  <line x1="600" y1="350" x2="250" y2="520" stroke="#BA68C8" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(250, 520)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#BA68C8" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(186, 104, 200, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#BA68C8" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">HL7</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">HL7 &amp; Fast FHIR</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Standard Medical Messaging</text>
+  </g>
+
+  <!-- 6: Bottom Right - Ocean eReferral & EMR -->
+  <line x1="600" y1="350" x2="950" y2="520" stroke="#24C6DA" stroke-width="2" stroke-opacity="0.6"/>
+  <g transform="translate(950, 520)">
+    <rect x="-100" y="-40" width="200" height="80" rx="14" fill="rgba(255, 255, 255, 0.05)" stroke="#24C6DA" stroke-width="1.5"/>
+    <circle cx="-65" cy="0" r="18" fill="rgba(36, 198, 218, 0.2)"/>
+    <text x="-65" y="5" text-anchor="middle" fill="#24C6DA" font-family="system-ui, sans-serif" font-weight="bold" font-size="12">EMR</text>
+    <text x="-35" y="-5" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Ocean &amp; Clinics</text>
+    <text x="-35" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Provincial &amp; Regional Networks</text>
+  </g>
+
+  <!-- Bottom Tagline -->
+  <rect x="350" y="615" width="500" height="35" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)"/>
+  <text x="600" y="638" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">
+    Available as <tspan fill="#24C6DA">On-Premises</tspan>, <tspan fill="#00E5FF">SaaS</tspan>, or <tspan fill="#BA68C8">Hybrid Cloud</tspan> Architecture
+  </text>
+</svg>
