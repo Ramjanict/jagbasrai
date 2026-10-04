@@ -7,6 +7,18 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)
 ![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)
 
+[![Live Site](https://img.shields.io/badge/🌐%20Live%20Site-goautomatemd.com-success?style=flat-square)](https://goautomatemd.com)
+[![Preview](https://img.shields.io/badge/🔗%20Preview-clientproject--ten.vercel.app-blue?style=flat-square&logo=vercel)](https://clientproject-ten.vercel.app)
+
+---
+
+## 🌐 Live URLs
+
+| Environment        | URL                                                                 |
+|--------------------|---------------------------------------------------------------------|
+| 🚀 **Production**  | [https://goautomatemd.com](https://goautomatemd.com)               |
+| 🔗 **Preview**     | [https://clientproject-ten.vercel.app](https://clientproject-ten.vercel.app) |
+
 ---
 
 ## ✨ Features
@@ -137,6 +149,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🚀
 ## 🚢 Deployment
 
 This project is optimised for **[Vercel](https://vercel.com)**. Push to `main` and Vercel will auto-deploy.
+
+| Environment        | URL                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------|
+| 🚀 **Production**  | [https://goautomatemd.com](https://goautomatemd.com)                                 |
+| 🔗 **Preview**     | [https://clientproject-ten.vercel.app](https://clientproject-ten.vercel.app)         |
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ramjanict/jagbasrai)
 
